@@ -92,10 +92,6 @@
         }
     }
 
-    .active a{
-        color: #c9cdce;
-    }
-
     .menuArrow {
         width: 2vw;
         padding-left: 3vw;
@@ -130,8 +126,19 @@
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .menu li:hover {
-        display: inline-block;
+    .active {
+        border-bottom: unset;
+        margin-bottom: unset;
+
+        .menuArrow {
+            filter: invert(83%) sepia(7%) saturate(84%) hue-rotate(145deg) brightness(95%) contrast(100%);
+        }
+        a {
+            color: #c9cdce;
+        }
+    }
+
+    .menu li:hover:not(.active) {
         background-color: #c9cdce;
         transition: 5s ease-in;
     }

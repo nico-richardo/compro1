@@ -1,0 +1,27 @@
+$screenMobile: 1023px;
+$screenLaptop: 1024px;
+$button-size: 20vh;
+
+
+@mixin animation-mixin($name, $from, $to) {
+    @keyframes #{$name} {
+        0% {
+            transform: translate3d($from, 0, 0);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translate3d($to, 0, 0);
+            opacity: 1;
+        }
+    }
+}
+
+@include animation-mixin(slide-1, 0, 100%);
+@include animation-mixin(slide-2, 0, 200%);
+
+
+body {
+    margin: 0;
+    font-family: 'Karla';
+}

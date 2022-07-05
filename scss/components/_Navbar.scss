@@ -20,6 +20,7 @@
     background-color: #fbf1ea;
     color: #4f4b47;
     border-bottom: 2px solid #cdc5bf;
+    border-top: 2px solid #cdc5bf;
     padding: 0;
 }
 
@@ -45,7 +46,7 @@
 .menu {
     display: flex;
     gap: 1em;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 .active {

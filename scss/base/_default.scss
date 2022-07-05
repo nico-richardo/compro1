@@ -20,8 +20,57 @@ $button-size: 20vh;
 @include animation-mixin(slide-1, 0, 100%);
 @include animation-mixin(slide-2, 0, 200%);
 
-
+//BODY CSS
 body {
     margin: 0;
     font-family: 'Karla';
+    background-color: #fbf1ea;
+}
+
+#appContainer {
+    padding: 0;
+    position: relative;
+    display: block;
+    width: 100vw;
+    min-height: 100vh;
+    height: max-content;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    @media (min-width: $screenDesktop) {
+        border-right: 2px solid #cdc5bf;
+        border-left: 2px solid #cdc5bf;
+        width: 80vw;
+        padding-top: 20vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+}
+
+#loadDivs {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screenMobile) {
+        flex-direction: row;
+    }
+}
+
+#desktopLogoContainer {
+    display: none;
+    
+    @media (min-width: $screenMobile) {
+        display: block;
+        position: absolute;
+        z-index: 99;
+        top: -5vw;
+        left : -2vw;
+    
+        #desktopLogo {
+            width: 88vw;
+            height: 25vw;
+        }
+    }
 }

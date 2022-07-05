@@ -1,5 +1,5 @@
 $(function () {
-    $("#loadNavbar").load("components/navbar.html");
+    $("#loadDivs").load("pages/home.html");
 });
 
 

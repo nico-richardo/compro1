@@ -1,14 +1,34 @@
-import Navigo from 'navigo'; // When using ES modules.
 
-const router = new Navigo('/');
-router.on({
-    '/': () => {
-      $("#loadDivs").load("/components/navbar.html");
-    },
-    '/about': () => {
-        $("#loadDivs").load("/pages/about.html");
+var currentMenu = '/';
+function getIdByPage(value) {
+    switch (value) {
+        case '/':
+            return ".homeMenuMobile, .homeMenuDesktop"
+        case '/about':
+            return ".overMenu"
+
+        default:
+            return ".homeMenuMobile, .homeMenuDesktop"
     }
-  });
+}
 
+window.loadPage = (value) => {
+    let components = "components/navbar.html";
+    switch (value) {
+        
+        case '/about':
+            components = "components/navbar.html";
+            break;
 
-  router.resolve();
+        case '/':
+        default:
+            break;
+    }
+
+    
+    $("#loadDivs").load("components/navbar.html", (params) => {
+        $(getIdByPage(value)).addClass("active");
+        $(getIdByPage(currentMenu)).removeClass("active");
+        currentMenu = value;
+    });
+}

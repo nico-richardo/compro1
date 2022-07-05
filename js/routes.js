@@ -13,11 +13,11 @@ function getIdByPage(value) {
 }
 
 window.loadPage = (value) => {
-    let components = "components/navbar.html";
+    let components = "pages/home.html";
     switch (value) {
         
         case '/about':
-            components = "components/navbar.html";
+            components = "pages/about.html";
             break;
 
         case '/':
@@ -26,7 +26,7 @@ window.loadPage = (value) => {
     }
 
     
-    $("#loadDivs").load("components/navbar.html", (params) => {
+    $("#loadDivs").load(components, (params) => {
         $(getIdByPage(value)).addClass("active");
         $(getIdByPage(currentMenu)).removeClass("active");
         currentMenu = value;

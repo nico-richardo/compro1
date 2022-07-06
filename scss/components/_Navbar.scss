@@ -157,6 +157,16 @@
         transition: 5s ease-in;
     }
 
+    .menu li:hover:not(.active) {
+        background-color: #4f4b47;
+        border-radius: 5px;
+        transition: 0.3s ease;
+
+        a {
+            color: #c9cdce;
+        }
+    }
+
     .menu li {
         height: 5vw;
         justify-content: flex-start;

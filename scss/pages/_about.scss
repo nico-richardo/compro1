@@ -1,0 +1,22 @@
+.about_container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw 0;
+}
+
+.about_img {
+    width: 25vw;
+    height: 30vw;
+}
+
+.about_text {
+    font-size: 0.8em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.paddingText {
+    padding: 10vw 5vw;
+}

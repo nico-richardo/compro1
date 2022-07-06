@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: #fbf1ea;
-    color: #4f4b47;
+    color: #A69E99;
     border-bottom: 2px solid #cdc5bf;
     border-top: 2px solid #cdc5bf;
     padding: 0;
@@ -29,7 +29,7 @@
     padding: 0;
 
     a {
-        color: #4f4b47;
+        color: #cdc5bf;
         padding: 2vw 0;
         vertical-align: middle;
         display: flex;
@@ -52,11 +52,16 @@
 .active {
     border-bottom: 2px solid #4f4b47;
     margin-bottom: -2px;
+
+    a {
+        font-weight: bolder;
+        color: #4f4b47;
+    }
 }
 
 
 .menu li:hover:not(.active) {
-    background-color: #c9cdce;
+    background-color: #4f4b47;
     border-radius: 5px;
     transition: 0.3s ease;
 }
@@ -80,6 +85,11 @@
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: $screenMobile) {
+
+    .nav-links a {
+        color: #4f4b47;
+    }
+
     .logo {
         display: flex;
 
@@ -102,6 +112,7 @@
         justify-content: space-between;
         padding: 3vw 5vw;
         border-bottom: 2px solid #cdc5bf;
+        color: #4f4b47;
     }
 
     .menuContainer {
@@ -134,6 +145,7 @@
         .menuArrow {
             filter: invert(83%) sepia(7%) saturate(84%) hue-rotate(145deg) brightness(95%) contrast(100%);
         }
+
         a {
             color: #c9cdce;
         }

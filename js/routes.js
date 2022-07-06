@@ -23,11 +23,12 @@ window.loadPage = (value) => {
             break;
     }
 
-
-    $("#loadDivs").load(components, () => {
-        $('#checkbox_toggle').prop('checked', false);
-        $(getIdByPage(value)).addClass("active");
-        $(getIdByPage(currentMenu)).removeClass("active");
-        currentMenu = value;
-    });
+    if (currentMenu !== value) {
+        $("#loadDivs").load(components, () => {
+            $('#checkbox_toggle').prop('checked', false);
+            $(getIdByPage(currentMenu)).removeClass("active");
+            $(getIdByPage(value)).addClass("active");
+            currentMenu = value;
+        });
+    }
 }

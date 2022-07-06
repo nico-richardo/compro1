@@ -51,7 +51,7 @@ body {
 
 #loadDivs {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     @media (min-width: $screenMobile) {
         flex-direction: row;

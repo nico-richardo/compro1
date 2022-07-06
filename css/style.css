@@ -145,6 +145,7 @@ body {
   border-bottom: 2px solid #cdc5bf;
   border-top: 2px solid #cdc5bf;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-links {

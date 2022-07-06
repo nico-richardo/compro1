@@ -1,21 +1,19 @@
-
 var currentMenu = '/';
 function getIdByPage(value) {
     switch (value) {
-        case '/':
-            return ".homeMenuMobile, .homeMenuDesktop"
         case '/about':
             return ".overMenu"
 
+        case '/':
         default:
-            return ".homeMenuMobile, .homeMenuDesktop"
+            return ".homeMenu"
     }
 }
 
 window.loadPage = (value) => {
     let components = "pages/home.html";
     switch (value) {
-        
+
         case '/about':
             components = "pages/about.html";
             break;
@@ -25,8 +23,9 @@ window.loadPage = (value) => {
             break;
     }
 
-    
-    $("#loadDivs").load(components, (params) => {
+
+    $("#loadDivs").load(components, () => {
+        $('#checkbox_toggle').prop('checked', false);
         $(getIdByPage(value)).addClass("active");
         $(getIdByPage(currentMenu)).removeClass("active");
         currentMenu = value;

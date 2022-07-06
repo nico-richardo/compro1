@@ -139,11 +139,11 @@ body {
   transition: 0.3s ease;
 }
 
-.homeMenuDesktop {
+.menuDesktop {
   display: flex;
 }
 
-.homeMenuMobile {
+.menuMobile {
   display: none;
 }
 
@@ -206,7 +206,7 @@ body {
   .active a {
     color: #c9cdce;
   }
-  .menu li:hover:not(.active) {
+  .menu li:hover {
     background-color: #c9cdce;
     transition: 5s ease-in;
   }
@@ -220,10 +220,10 @@ body {
     padding-bottom: 5vw;
     border-bottom: 2px solid #cdc5bf;
   }
-  .homeMenuDesktop {
+  .menuDesktop {
     display: none !important;
   }
-  .homeMenuMobile {
+  .menuMobile {
     display: flex;
   }
   #checkbox_toggle:checked ~ .menuContainer {

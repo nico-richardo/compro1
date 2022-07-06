@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: #fbf1ea;
-    color: #A69E99;
+    color: $navbar-color-desktop;
     border-bottom: 2px solid #cdc5bf;
     border-top: 2px solid #cdc5bf;
     padding: 0;
@@ -50,18 +50,18 @@
 }
 
 .active {
-    border-bottom: 2px solid #4f4b47;
+    border-bottom: 2px solid $navbar-color-mobile;
     margin-bottom: -2px;
 
     a {
         font-weight: bolder;
-        color: #4f4b47;
+        color: $navbar-color-mobile;
     }
 }
 
 
 .menu li:hover:not(.active) {
-    background-color: #4f4b47;
+    background-color: $navbar-color-mobile;
     border-radius: 5px;
     transition: 0.3s ease;
 }
@@ -87,7 +87,7 @@
 @media (max-width: $screenMobile) {
 
     .nav-links a {
-        color: #4f4b47;
+        color: $navbar-color-mobile;
     }
 
     .logo {
@@ -112,7 +112,7 @@
         justify-content: space-between;
         padding: 3vw 5vw;
         border-bottom: 2px solid #cdc5bf;
-        color: #4f4b47;
+        color: $navbar-color-mobile;
     }
 
     .menuContainer {

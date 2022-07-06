@@ -94,12 +94,23 @@ body {
   flex: 1;
   justify-content: center;
   align-items: center;
-  padding: 10vw 0;
+  padding: 10vw 5vw;
+}
+@media (min-width: 1024px) {
+  .about_container {
+    padding: 10vw 0;
+  }
 }
 
 .about_img {
-  width: 25vw;
-  height: 30vw;
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (min-width: 1024px) {
+  .about_img {
+    width: 25vw;
+    height: 30vw;
+  }
 }
 
 .about_text {

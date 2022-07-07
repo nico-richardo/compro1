@@ -23,8 +23,8 @@
   <!-- DEPENDENCY -->
   <script src="js/jquery-3.6.0.js"></script>
   <script type="module" src="js/index.js"></script>
-  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 
@@ -34,16 +34,23 @@
   </header>
   <main>
     <!-- Main -->
-    <div id="appContainer">
-      <div style="display:flex;flex-direction: column;">
-        <div id="desktopLogoContainer">
-          <img src='../assets/images/Logo.svg' id="desktopLogo" />
+    <div style="display:flex;">
+      <div id="appContainer">
+        <div style="display:flex;flex-direction: column;">
+          <div id="desktopLogoContainer">
+            <img src='../assets/images/Logo.svg' id="desktopLogo" />
+          </div>
+          <div id="loadNavbar">
+          </div>
+          <div id="loadDivs">
+          </div>
+          <div class="loadCarousel_Home mobileLayout"></div>
+          <div id="loadFooter">
+          </div>
         </div>
-        <div id="loadNavbar">
-        </div>
-        <div id="loadDivs">
-        </div>
-        <div id="loadFooter">
+      </div>
+      <div class="desktopLayout"  >
+        <div class="loadCarousel_Home">
         </div>
       </div>
     </div>

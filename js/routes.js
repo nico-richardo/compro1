@@ -25,6 +25,13 @@ window.loadPage = (value) => {
 
     if (currentMenu !== value) {
         $("#loadDivs").load(components, () => {
+            if('/' === value) {
+                $('#appContainer').addClass("homeLayout");
+                $(".loadCarousel_Home").css("display", "block");
+            } else {
+                $('#appContainer').removeClass("homeLayout");
+                $(".loadCarousel_Home").css("display", "none");
+            }
             $('#checkbox_toggle').prop('checked', false);
             $(getIdByPage(currentMenu)).removeClass("active");
             $(getIdByPage(value)).addClass("active");

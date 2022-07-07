@@ -2,18 +2,21 @@
 // Run ==> sass --watch scss/main.scss css/style.css
 // Import base
 @import 
-"./base/helpers",
-"./base/assets",
-"./base/colors", 
 "./base/default", 
-"./base/fonts";
+"./base/colors", 
+"./base/fonts",
+"./base/assets",
+"./base/helpers";
 
 // Import Layout/Pages
-@import 
+@import
+"./pages/home", 
 "./pages/about";
+
 
 //Import components
 @import 
+"./components/carousel_home",
 "./components/_Navbar",
 "./components/footer";
 

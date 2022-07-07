@@ -22,6 +22,8 @@
     border-bottom: 2px solid #cdc5bf;
     border-top: 2px solid #cdc5bf;
     padding: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -124,6 +126,7 @@
         height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.7);
+        z-index: 99;
     }
 
     .menu {

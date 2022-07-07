@@ -30,7 +30,7 @@ body {
 #appContainer {
     padding: 0;
     position: relative;
-    display: block;
+    display: inline-block;
     width: 100vw;
     min-height: 100vh;
     height: max-content;
@@ -46,7 +46,12 @@ body {
         margin-left: 10vw;
         margin-right: 10vw;
     }
+}
 
+#appContainer:not(.homeLayout) {
+    @media (min-width: $screenDesktop) {
+        margin-right: 0;
+    }
 }
 
 #loadDivs {

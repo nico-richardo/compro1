@@ -27,7 +27,7 @@ body {
 #appContainer {
   padding: 0;
   position: relative;
-  display: flex;
+  display: block;
   width: 100vw;
   min-height: 100vh;
   height: max-content;
@@ -42,13 +42,7 @@ body {
     width: 80vw;
     padding-top: 20vw;
     margin-left: 10vw;
-    margin-right: 0vw;
-  }
-}
-
-@media (min-width: 1024px) {
-  #appContainer:not(.homeLayout) {
-    margin-right: 10vw;
+    margin-right: 0;
   }
 }
 
@@ -148,6 +142,69 @@ body {
   padding: 10vw 5vw;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#cardlist_container {
+  padding: 5vw;
+}
+
+div.gallery {
+  border: 1px solid #fbf1ea;
+}
+
+div.gallery:hover {
+  border: 1px solid #4f4b47;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 3vw 1vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  color: #A69E99;
+}
+@media only screen and (min-width: 1024px) {
+  div.desc {
+    padding: 1vw 0.5vw;
+    font-size: 1em;
+  }
+}
+
+div.price {
+  float: right;
+}
+
+.responsive {
+  padding: 0 5vw;
+  float: left;
+  width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  margin: 5vw 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .responsive {
+    width: 33.3%;
+    margin: 1vw 0;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .card_container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .image_container {
   padding: 20px 0;
 }
@@ -171,6 +228,7 @@ body {
   width: 100vw;
   height: 100%;
   border-top: 2px solid #cdc5bf;
+  background-color: #fbf1ea;
 }
 @media (min-width: 1024px) {
   .carousel_home {
@@ -207,7 +265,7 @@ body {
 }
 @media (min-width: 1024px) {
   .mobileLayout {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -417,7 +475,7 @@ body {
 }
 @media (min-width: 1024px) {
   #footer_item1 {
-    flex: 7;
+    flex: 6;
   }
 }
 
@@ -427,7 +485,7 @@ body {
 }
 @media (min-width: 1024px) {
   #footer_item2 {
-    flex: 2;
+    flex: 3;
   }
 }
 

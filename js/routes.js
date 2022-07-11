@@ -4,6 +4,9 @@ function getIdByPage(value) {
         case '/about':
             return ".overMenu"
 
+        case '/shop':
+            return ".shopMenu"
+
         case '/':
         default:
             return ".homeMenu"
@@ -18,6 +21,10 @@ window.loadPage = (value) => {
             components = "pages/about.html";
             break;
 
+        case '/shop':
+            components = "pages/shop.html";
+            break;
+
         case '/':
         default:
             break;
@@ -25,7 +32,7 @@ window.loadPage = (value) => {
 
     if (currentMenu !== value) {
         $("#loadDivs").load(components, () => {
-            if('/' === value) {
+            if ('/' === value) {
                 $('#appContainer').addClass("homeLayout");
                 $(".loadCarousel_Home").css("display", "block");
             } else {

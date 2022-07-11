@@ -1,0 +1,53 @@
+div.gallery {
+    border: 1px solid #fbf1ea;
+}
+
+div.gallery:hover {
+    border: 1px solid #4f4b47;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 3vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    color: $navbar-color-desktop;
+
+    @media only screen and (min-width: $screenDesktop) {
+        padding: 1vw 0.5vw;
+        font-size: 1em;
+    }
+}
+
+div.price {
+    float: right;
+}
+
+
+.responsive {
+    padding: 0 5vw;
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    margin: 5vw 0;
+}
+
+@media only screen and (min-width: $screenDesktop) {
+    .responsive {
+        width: 33.3%;
+        margin: 1vw 0;
+    }
+}
+
+.card_container {
+    @media only screen and (max-width: $screenMobile) {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,9 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#cardlist_container {
+    padding: 5vw;
+}

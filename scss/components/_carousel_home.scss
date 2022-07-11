@@ -21,6 +21,7 @@
     width: 100vw;
     height: 100%;
     border-top: 2px solid #cdc5bf;
+    background-color: #fbf1ea;
 
     @media (min-width: $screenDesktop) {
         margin-right: 10vw;
@@ -57,7 +58,7 @@
     align-self: center;
 
     @media (min-width: $screenDesktop) {
-        display: none;
+        display: none !important;
     }
 }
 

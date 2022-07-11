@@ -11,11 +11,13 @@
 // Import Layout/Pages
 @import
 "./pages/home", 
-"./pages/about";
+"./pages/about",
+"./pages/shop";
 
 
 //Import components
 @import 
+"./components/card",
 "./components/carousel_home",
 "./components/_Navbar",
 "./components/footer";

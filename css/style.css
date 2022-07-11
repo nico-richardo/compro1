@@ -148,10 +148,6 @@ body {
   clear: both;
 }
 
-#cardlist_container {
-  padding: 5vw;
-}
-
 div.gallery {
   border: 1px solid #fbf1ea;
 }
@@ -169,13 +165,12 @@ div.desc {
   padding: 3vw 1vw;
   display: flex;
   justify-content: space-between;
-  font-size: 2em;
+  font-size: 1em;
   color: #A69E99;
 }
 @media only screen and (min-width: 1024px) {
   div.desc {
     padding: 1vw 0.5vw;
-    font-size: 1em;
   }
 }
 

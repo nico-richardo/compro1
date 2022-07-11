@@ -1,15 +1,25 @@
 var currentMenu = '/';
 function getIdByPage(value) {
+
+    //HANDLE /shop/::itemId
+    if (value.indexOf("/shop") !== -1 && value.length > 5) {
+        return '.shopMenu';
+    }
+
     switch (value) {
         case '/about':
-            return ".overMenu"
+            return ".overMenu";
 
+        // TO HANDLE /shop 
         case '/shop':
-            return ".shopMenu"
+            return ".shopMenu";
+
+        case '/contact':
+            return ".contactMenu";
 
         case '/':
         default:
-            return ".homeMenu"
+            return ".homeMenu";
     }
 }
 
@@ -24,10 +34,18 @@ window.loadPage = (value) => {
         case '/shop':
             components = "pages/shop.html";
             break;
+        
+        case '/contact' :
+            components = "pages/contact.html";
+            break;
 
         case '/':
         default:
             break;
+    }
+
+    if (value.indexOf("/shop") !== -1 && value.length > 5) {
+        components = "pages/item.html";
     }
 
     if (currentMenu !== value) {

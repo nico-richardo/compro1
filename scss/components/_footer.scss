@@ -3,21 +3,23 @@
     flex-direction: row;
     align-items: center;
     flex-direction: row;
-    padding: 0 5vw;
-    border-bottom: 2px solid #cdc5bf;
     border-top: 2px solid #cdc5bf;
     color: $navbar-color-desktop;
     font-size: 0.6em;
-    height: 10vw;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
     @media (min-width: $screenDesktop) {
         font-size: 0.8em;
-        height: 5vw;
+        height: 3em;
     }
 }
 
 #footer_item1 {
     display: flex;
     flex: 4;
+    padding-left: 2em;
     @media (min-width: $screenDesktop) {
         flex: 6;
     }
@@ -34,6 +36,7 @@
 #footer_item3 {
     display: flex;
     flex:4;
+    padding-right: 2em;
     @media (min-width: $screenDesktop) {
         flex: 3;
     }

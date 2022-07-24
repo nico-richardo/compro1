@@ -7,11 +7,11 @@
     max-width: 100vw;
     margin: auto;
     align-items: left;
-    padding: 10vw 5vw;
+    padding: 10vw 3em;
 
     @media (min-width: $screenDesktop) {
         padding: 10vw 0;
-        max-width: 35vw;
+        max-width: 33em;
         min-height: 50vh;
     }
 }
@@ -24,7 +24,7 @@
 }
 
 .paddingText {
-    padding: 10vw 5vw;
+    padding: 10vw 3em;
 }
 
 .contact_title {

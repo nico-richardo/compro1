@@ -4,8 +4,8 @@
 
 .menuItem {
     list-style: none;
-    padding-right: 2vw;
-    padding-left: 2vw;
+    padding-right: 1em;
+    padding-left: 1em;
 
     a {
         text-decoration: none;
@@ -33,7 +33,7 @@
 
     a {
         color: #cdc5bf;
-        padding: 2vw 0;
+        padding: 2em 0;
         vertical-align: middle;
         display: flex;
     }
@@ -48,8 +48,8 @@
 /* NAVBAR MENU */
 .menu {
     display: flex;
-    gap: 1em;
-    font-size: 1vw;
+    gap: 4em;
+    font-size: 0.8em;
 }
 
 .active {
@@ -64,9 +64,14 @@
 
 
 .menu li:hover:not(.active) {
-    background-color: $navbar-color-mobile;
+    font-weight: bolder;
     border-radius: 5px;
     transition: 0.3s ease;
+
+    a {
+        font-weight: bolder;
+        color: $navbar-color-mobile;
+    }
 }
 
 .menuDesktop {
@@ -82,7 +87,7 @@
 /*HAMBURGER MENU*/
 .hamburger {
     display: none;
-    font-size: 5vw;
+    font-size: 1em;
     user-select: none;
 }
 
@@ -97,23 +102,24 @@
         display: flex;
 
         .mobileLogo {
-            width: 50vw;
-            margin-bottom: 2vw;
+            max-width: 150px;
+            max-height: 33px;
         }
 
         .shoppingLogo {
-            width: 5vw;
+            height: 20px;
+            width: 20px;
         }
     }
 
     .menuArrow {
         width: 2vw;
-        padding-left: 3vw;
+        padding-left: 1em;
     }
 
     .navbar {
         justify-content: space-between;
-        padding: 3vw 5vw;
+        padding: 1em 1em;
         border-bottom: 2px solid #cdc5bf;
         color: $navbar-color-mobile;
     }
@@ -134,10 +140,10 @@
         position: absolute;
         background-color: #fbf1ea;
         text-align: center;
-        font-size: 5vw;
+        font-size: 3em;
         left: 0;
         top: 0;
-        width: 95vw;
+        width: 93em;
         height: 100%;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     }
@@ -161,23 +167,23 @@
     }
 
     .menu li:hover:not(.active) {
-        background-color: $navbar-color-mobile;
+        background-color: #c9cdce;
         border-radius: 5px;
         transition: 0.3s ease;
 
         a {
-            color: #c9cdce;
+            color: $navbar-color-mobile;
         }
     }
 
     .menu li {
-        height: 5vw;
+        height: 3em;
         justify-content: flex-start;
         display: flex;
         align-items: center;
-        padding-left: 5vw;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
+        padding-left: 3em;
+        padding-top: 3em;
+        padding-bottom: 3em;
         border-bottom: 2px solid #cdc5bf;
     }
 

@@ -12,14 +12,14 @@ div.gallery img {
 }
 
 div.desc {
-    padding: 3vw 1vw;
+    padding: 1em 0.5em;
     display: flex;
     justify-content: space-between;
     font-size: 1em;
     color: $navbar-color-desktop;
 
     @media only screen and (min-width: $screenDesktop) {
-        padding: 1vw 0.5vw;
+        padding: 0.5em 0.5em;
     }
 }
 
@@ -29,18 +29,18 @@ div.price {
 
 
 .responsive {
-    padding: 0 5vw;
+    padding: 0 3em;
     float: left;
     width: 80%;
     box-sizing: border-box;
     display: flex;
-    margin: 5vw 0;
+    margin: 3em 0;
 }
 
 @media only screen and (min-width: $screenDesktop) {
     .responsive {
         width: 33.3%;
-        margin: 1vw 0;
+        margin: 0.5em 0;
     }
 }
 

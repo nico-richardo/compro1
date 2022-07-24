@@ -1,18 +1,68 @@
+#homePageContainer {
+    display: flex;
+    margin: auto;
+    direction: row;
+    max-width: 1000px;
+    position: relative;
+}
+
+#desktopLogoContainer {
+    position: absolute;
+    top: -5em;
+    justify-content: center;
+    display: flex;
+    right: 0;
+    left: 0;
+
+    @media (min-width: 1023px) {
+        #desktopLogo {
+            width: 65em;
+            margin-right: -3em;
+            height: 40vh;
+        }
+    }
+}
+
+
+#div1 {
+    border-right: 2px solid #cdc5bf;
+    border-left: 2px solid #cdc5bf;
+    flex-grow: 2;
+    height: calc(100vh - 12em);
+    padding-top: 12em;
+    position: relative;
+}
+
+#div2 {
+    flex-grow: 1;
+    border-right: 2px solid #cdc5bf;
+    height: 100vh;
+}
+
+@media (min-width: 1024px) {
+    #loadFooter {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footerContainer {
+        font-size: 0.8em;
+        height: 3em;
+    }
+}
+
 .home_container {
     display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    padding: 10vw 5vw;
-    @media (min-width: $screenDesktop) {
-        padding: 10vw 5vw;
-        min-height: initial;
-    }
+    position: relative;
+    height: 70%;
 }
 
 .home_text {
     font-size: 0.8em;
+    height: 50%;
+    width: 80%;
     text-align: justify;
-    text-justify: inter-word;
+    position: relative;
+    margin: auto;
 }

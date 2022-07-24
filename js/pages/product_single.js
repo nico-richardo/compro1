@@ -14,3 +14,9 @@ var product = {
         justo rhoncus velit mattis sollicitudin.",
     price: "€80"
 }
+
+$(document).ready(function () {
+    localStorage.setItem('imgArr', JSON.stringify(product.srcImg));
+    $(".loadCarousel_Product").load("components/carousel_product.html");
+});
+//# sourceURL=browsertools://js/pages/product_single.js

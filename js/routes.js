@@ -45,11 +45,11 @@ window.loadPage = (value) => {
     }
 
     if (value.indexOf("/shop") !== -1 && value.length > 5) {
-        components = "pages/item.html";
+        components = "pages/product_single.html";
     }
 
     if (currentMenu !== value) {
-        $("#loadDivs").load(components, () => {
+        $("#loadApp").load(components, () => {
             if ('/' === value) {
                 $('#appContainer').addClass("homeLayout");
                 $(".loadCarousel_Home").css("display", "block");

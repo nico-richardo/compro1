@@ -1,0 +1,39 @@
+.image_container {
+    padding: 20px 0;
+
+    img {
+        margin-left: 20px;
+        // width: 30vw;
+        // height: 40vw;
+    }
+
+    @media (min-width: $screenDesktop) {
+        padding: 20px 0 20px 3em;
+        width: 20vw !important;
+        img {
+            // width: 20vw;
+            // height: 30vw;
+        }
+    }
+}
+
+.carousel_product {
+    width: 100vw;
+    height: 100%;
+    border-top: 2px solid #cdc5bf;
+    background-color: #fbf1ea;
+    align-self: center;
+
+    @media (min-width: $screenDesktop) {
+        margin-right: 10vw;
+        max-width: 900px;
+        max-height: 900px;
+        width: 33em;
+        height: 100%;
+        border-right: 2px solid #cdc5bf;
+        border-bottom: 2px solid #cdc5bf;
+        .slick-list {
+            height: 100vh !important;
+        }
+    }
+}

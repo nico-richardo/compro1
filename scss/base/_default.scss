@@ -42,18 +42,13 @@ body {
         border-right: 2px solid #cdc5bf;
         border-left: 2px solid #cdc5bf;
         width: 80vw;
-        padding-top: 20vw;
+        padding-top: 11em;
         margin-left: 10vw;
         margin-right: 0;
     }
 }
 
-#appContainer:not(.homeLayout) {
-    @media (min-width: $screenDesktop) {
-    }
-}
-
-#loadDivs {
+.loadDivs {
     display: flex;
     flex-direction: column-reverse;
 
@@ -69,12 +64,11 @@ body {
         display: block;
         position: absolute;
         z-index: 99;
-        top: -5vw;
-        left : -2vw;
+        top: -10em;
     
         #desktopLogo {
-            width: 88vw;
-            height: 25vw;
+            width: 45em;
+            height: 12em;
         }
     }
 }
